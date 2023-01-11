@@ -47,7 +47,7 @@ body {
     margin-top: 5px;
 }
 
-/*---- DARK/LIGHT MODE BUTTON ----*/
+/*---- DARK/LIGHT MODE  ----*/
 
 .dark-mode-btn {
     background-color: transparent;
@@ -55,42 +55,39 @@ body {
     padding: 20px;
 }
 
-/*---- DARK MODE ----*/
-
 body.dark-mode {
     /* Estilos para modo oscuro */
     background-color: var(--background-header);
     color: #fff;
 }
 
-/*---- LIGHT MODE ----*/
-
 body:not(.dark-mode) {
     /* Estilos para modo claro */
     background-color: #fff;
-    color: #333;
+    color: var(--background-header);
+    font-weight: bold;
 }
 
-/* LANGUAGE BTN */
+
+/* LANGUAGE MODE */
 
 .language-btn {
     padding-right: 30px;
     justify-content: center;
 }
 
-/* ENGLISH MODE */
 .language-btn[data-language="en"] {
     background-color: transparent;
     color: #000;
     border: none;
 }
 
-/* SPANISH MODE*/
 .language-btn[data-language="es"] {
     background-color: transparent;
     border: none;
     /* color: #fff; */
 }
+
 
 /*---- BARRA DE NAVEGACIÓN ----*/
 
@@ -126,7 +123,6 @@ span {
 .home-section-text h1 {
     padding-top: 50px;
     margin: 0;
-    color: var(--white-color-two);
     font-family: monospace;
     font-size: 4em;
     font-weight: bold;
@@ -135,7 +131,7 @@ span {
 .home-section-text p {
     padding: 20px 25px;
     font-size: 18px;
-    color: var(--white-color);
+    /* color: var(--white-color); */
     margin: 10px 0 20px;
     line-height: 1.2;
 }
